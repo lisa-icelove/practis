@@ -27,4 +27,4 @@ syumi=st.multiselect(
     ["読書","スポーツ","ゲーム","音楽","絵画","その他"]
 )
 if st.button("趣味を保存"):
-    st.session_state.syumi=syumi
+    st.session_state.syumi=", ".join(syumi)
