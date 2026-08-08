@@ -15,7 +15,7 @@ name=st.text_input("名前を入力してください")
 if st.button("名前を保存"):
     st.session_state.name=name
 
-old=st.radio(
+old=st.selectbox(
     "あなたの学年を選んでください",
     ["小学5年生","小学6年生","中学1年生","中学2年生","中学3年生"]
 )
