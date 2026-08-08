@@ -23,3 +23,11 @@ if "syumi" in st.session_state and st.session_state.syumi:
 else:
     st.error("趣味が設定されていません")
     st.write("メインページで趣味を選んでください")
+
+st.write("---------------------------------------------")
+
+if "takenoko"in st.session_state and st.session_state.takenoko and st.session_state.takenoko=="たけのこ派":
+    st.write(f"ー派閥：{st.session_state.takenoko}")
+else:
+    st.error("派閥が設定されていないか、きのこ派にされています")
+    st.write("メインページでたけのこ派を選んでください")
