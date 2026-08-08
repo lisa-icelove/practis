@@ -5,3 +5,4 @@ if st.button("ユーザー情報をすべてリセット"):
     st.session_state.old=""
     st.session_state.syumi=""
     st.session_state.takenoko=""
+st.success("ユーザー情報をリセットしました")
