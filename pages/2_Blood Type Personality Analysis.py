@@ -9,9 +9,9 @@ if "a" not in st.session_state:
 
 def add_a():
     if st.session_state.a:
-        st.session_state.a += 10
-    else:
         st.session_state.a -= 10
+    else:
+        st.session_state.a += 10
 
 st.checkbox(
     "部屋は片付いているほうだ",
